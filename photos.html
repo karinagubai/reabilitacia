@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bfad0c71b.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="dist/switchery.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Фото и видео реабилитационного центра</title>
+  </head>
+  <body>
+    <div class="address-fixed">
+        <a href="#modalConsult" class="consult-free" data-toggle="modal"><img src="img/consult.png" alt="Бесплатная консультация"></a>
+        <a href="#modalAddress" data-toggle="modal"><i class="material-icons blue-info-btn">info</i></a>
+    </div>
+
+    <!-- Modal for address and free consultation-->
+    <div class="modal fade" id="modalConsult" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Ваше обращение анонимно</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" required>
+              <label for="name">Телефон</label>
+              <input type="tel" id="phone" name="phone" required>
+              <input type="checkbox" class="js-switch" id="realPerson" name="realPerson" required>
+              <label for="realPerson">Я человек, а не спам рассыльщик</label>
+              <button type="submit" class="btn btn-info">обратиться</button>
+            </form>
+            <p class="formisSafe">Благодаря нашим инновационным технологиям обработки данных Ваши контактные данные не могут быть переданы третьим лицам</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#modalConsult-->
+    <div class="modal fade" id="modalAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Контактная информация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+            <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="bluelink">+7 (843) 226 47 57 (горячая линия)</a></div>
+            <div class="ver-centered"><i class="material-icons">email</i><a href="#" class="bluelink">info@fundzj.ru</a></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#modalAddress-->
+    <header id="mainHeader">
+      <div class="container-fluid">
+        <div class="top-nav">
+          <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="bluelink">+7 (843) 226 47 57 </a><span> (горячая линия)</span></div>
+          <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+          <div  class="ver-centered"><i class="material-icons">email</i><a href="#" class="bluelink">info@fundzj.ru</a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="#">Реабилитационный центр <br><b class="company-name">&laquo;Здоровая жизнь&raquo; </b><span class="company-city">Казань</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="nav-ul">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Фото и видео<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div><!-- /.container-fluid-->
+    </header>
+
+
+
+
+
+
+
+    <footer>
+      <div class="container-fluid text-white">
+        <a href="#" class="totop"><i class="fas fa-angle-up"></i></a>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4>наши контакты</h4>
+
+              <div class="ver-centered"><i class="material-icons">access_time</i><span>Работаем круглосуточно 24/7</span></div>
+              <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+              <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="whitelink">+7 (843) 226 47 57 (позвонить)</a></div>
+              <div class="ver-centered"><i class="material-icons">email</i><a href="#" class="whitelink">info@fundzj.ru (написать)</a></div>
+              <div class="social-links">
+                <a href="http://vk.com/public118919101" class="whitelink" target="_blank"><i class="fab fa-vk fa-lg"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100011746761286" class="whitelink" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://www.youtube.com/channel/UCNl_CIYIgA0Iahlq-sEJnLA" class="whitelink" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+              </div>
+          </div>
+          <div class="d-none d-md-block col-md-3 col-lg-2">
+            <h4>навигация</h4>
+            <ul>
+              <li><a href="index.html" class="whitelink">Главная</a></li>
+              <li><a href="about.html" class="whitelink">О программе</a></li>
+              <li><a href="news.html" class="whitelink">Новости</a></li>
+              <li><a href="#" class="whitelink">Фото и видео</a></li>
+              <li><a href="reviews.html" class="whitelink">Отзывы</a></li>
+              <li><a href="contacts.html" class="whitelink">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 col-lg-2">
+            <h4>мы в регионах</h4>
+            <ul class="d-flex flex-wrap d-md-block regions">
+              <li><a href="http://moscowrc.ru" class="whitelink" target="_blank">Москва</a></li>
+              <li><a href="http://fundzj.ru/zj_ufa.html" class="whitelink"  target="_blank">Уфа</a></li>
+              <li><a href="http://fundzj.ru/zj_perm.html" class="whitelink" target="_blank">Пермь</a></li>
+              <li><a href="http://fundzj.ru/zj_novgorod.html" class="whitelink" target="_blank">Нижний новгород</a></li>
+              <li><a href="http://fundzj.ru/zj_samara.html" class="whitelink" target="_blank">Самара</a></li>
+              <li><a href="http://fundzj.ru/zj_penza.html" class="whitelink" target="_blank">Пенза</a></li>
+              <li><a href="http://orenburgrc.ru" class="whitelink" target="_blank">Оренбург</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <h4>лицензия</h4>
+            <p>Медицинские услуги оказываются ГБУЗ СОНД МЗ&nbsp;Самарской области
+    Самарский наркологический диспансер Южное шоссе&nbsp;18</p>
+          </div>
+      </div>
+      <p class="copyright">&copy; 2019 <a href="" class="whitelink">Лечение наркомании и алкоголизма в Казани - Реабилитационный центр «Здоровая Жизнь»
+    </a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="dist/switchery.js"></script>
+    <script src="dist/jquery.inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    </body>
+    </html>

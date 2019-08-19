@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bfad0c71b.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="dist/switchery.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Реабилитационный центр Здоровая жизнь</title>
+  </head>
+  <body>
+    <div class="address-fixed">
+        <a href="#modalConsult" class="consult-free" data-toggle="modal"><img src="img/consult.png" alt="Бесплатная консультация"></a>
+        <a href="#modalAddress" data-toggle="modal"><i class="material-icons blue-info-btn">info</i></a>
+    </div>
+
+    <!-- Modal for address and free consultation-->
+    <div class="modal fade" id="modalConsult" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Ваше обращение анонимно</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" required>
+              <label for="name">Телефон</label>
+              <input type="tel" id="phone" name="phone" required>
+              <input type="checkbox" class="js-switch" id="realPerson" name="realPerson" required>
+              <label for="realPerson">Я человек, а не спам рассыльщик</label>
+              <button type="submit" class="btn btn-info">обратиться</button>
+            </form>
+            <p class="formisSafe">Благодаря нашим инновационным технологиям обработки данных Ваши контактные данные не могут быть переданы третьим лицам</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#modalConsult-->
+    <div class="modal fade" id="modalAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Контактная информация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+            <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="bluelink">+7 (843) 226 47 57 (горячая линия)</a></div>
+            <div class="ver-centered"><i class="material-icons">email</i><a href="#" class="bluelink">info@fundzj.ru</a></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#modalAddress-->
+    <header id="mainHeader">
+      <div class="container-fluid">
+        <div class="top-nav">
+          <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="bluelink">+7 (843) 226 47 57 </a><span> (горячая линия)</span></div>
+          <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+          <div  class="ver-centered"><i class="material-icons">email</i><a href="#" class="bluelink">info@fundzj.ru</a></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="#">Реабилитационный центр <br><b class="company-name">&laquo;Здоровая жизнь&raquo; </b><span class="company-city">Казань</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="nav-ul">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photos.html">Фото и видео</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div><!-- /.container-fluid-->
+    </header>
+    <section id="banner">
+      <div class="overlay-banner">
+        <div class="container-fluid">
+          <h1>Мы поможем!</h1>
+          <p class="lead text-white">Ваш близкий в депрессии? <br>Употребляет наркотики или алкоголь?</p>
+          <a href="#modalConsult" class="callout" data-toggle="modal">обратиться анонимно</a>
+          <br><a href="#info-button" class="banner-arrow"><img class="arrow" src="img/down-arrow-light-blue.png" alt=""></a>
+        </div><!-- /.container-fluid-->
+      </div><!-- /.overlay-banner-->
+    </section><!-- /#banner-->
+    <section id="info-button">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-9 text-center">
+                <p>В правом нижнем углу расположена информационная кнопка</p>
+                  <i class="material-icons arrow-downward">arrow_downward</i>
+                  <i class="material-icons blue-info-btn">info</i>
+                  <p>Нажав на нее, Вы всегда можете узнать контактную информацию и связаться с нами удобным для Вас способом.</p>
+              </div>
+            </div>
+          </div><!-- /.col-12 col-md-6-->
+          <div class="col-auto">
+            <div class=" contacts-blue">
+              <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+              <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="bluelink">+7 (843) 226 47 57 (позвонить)</a></div>
+              <div class="ver-centered"><i class="material-icons">email</i><a href="#" class="bluelink">info@fundzj.ru (написать)</a></div>
+            </div>
+          </div><!-- /.col-auto-->
+        </div><!-- /.row-->
+      </div><!-- /.container-fluid-->
+    </section><!-- /#info-button-->
+    <section id="about-clinic">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+              <h2>лечение алкоголизма и наркомании в казани</h2>
+              <h4>В сложной жизненной ситуации может оказаться каждый</h4>
+              <p>Реабилитационный центр &laquo;Здоровая жизнь&raquo; оказывает анонимную помощь по&nbsp;избавлению от&nbsp;различных видов зависимости. Правильное лечение алкоголизма, так&nbsp;же, как и&nbsp;лечение наркомании, проводится в&nbsp;реабилитационном центре. Уникальная рабочая методика, квалифицированные специалисты и&nbsp;продуманные до&nbsp;мелочей условия, позволяют проводить реабилитацию наркозависимых и&nbsp;алкоголиков на&nbsp;самом высоком уровне. Срывы у&nbsp;прошедших лечение в&nbsp;реабилитационном центре &laquo;Здоровая жизнь&raquo; очень редки.</p>
+              <h4>Что мы предлагаем:</h4>
+              <p>1) лечение наркомании в&nbsp;Казани (проводится реабилитация наркозависимых от&nbsp;спайса, солей, опиумных и&nbsp;кодеиновых наркотиков, синтетических и&nbsp;других видов наркотической зависимости;<br>
+      2) лечение алкоголизма в&nbsp;Казани (лечение алкогольной зависимости любой стадии);<br>
+      3) лечение игровой зависимости (лудомании), проводится реабилитация зависимых от&nbsp;азартных игр.</p>
+              <h4>Обращайтесь к нам</h4>
+              <p>Лечение наркомании, алкоголизма и&nbsp;игромании долгий и&nbsp;затруднительный процесс, поэтому прошедшие реабилитацию в&nbsp;нашем центре всегда могут рассчитывать на&nbsp;нашу помощь в&nbsp;дальнейшем. Мы&nbsp;оказываем поддержку всем нашим пациентам.
+      Анонимное лечение алкоголизма и&nbsp;наркомании в&nbsp;Казанском реабилитационном центре &laquo;Здоровая жизнь&raquo; проводится опытными психологами.</p>
+          </div>
+        </div><!-- /.row-->
+      </div><!-- /.container-fluid-->
+    </section><!-- /#about-clinic-->
+    <section id="why-us">
+      <div class="container-fluid">
+        <h2 class=" text-center">почему выбирают нас</h2>
+        <div class="accordion" id="advantages-accord">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h3 class="mb-0">
+                    <a href="#collapseOne" class="accord-navitem" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>уникальная и эффективная программа</span>
+                    </a>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Мы&nbsp;рады познакомить вас с&nbsp;уникальной и&nbsp;по-настоящему эффективной программой реабилитации наркозависимых и&nbsp;алкоголиков. Наша программа отвечает всем требованиям общества, государства и&nbsp;медицины предъявляемым к&nbsp;современным реабилитационным центрам. Мы&nbsp;работаем не&nbsp;только с&nbsp;самими зависимыми, но&nbsp;и&nbsp;с&nbsp;их&nbsp;близкими. Проводится как индивидуальная методика, так и&nbsp;групповая терапия. Выявляя причины зависимости, мы&nbsp;можем помочь полностью изменить отношение человека к&nbsp;алкоголю, наркотикам или азартным играм. Благодаря квалифицированным сотрудникам центра &laquo;Здоровая жизнь&raquo; зависимый не&nbsp;только отказывается от&nbsp;употребления различных психоактивных веществ, но&nbsp;и&nbsp;полностью меняет образ жизни.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h3 class="mb-0">
+                    <a href="#collapseTwo" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>юридическое сопровождение</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Многие наркозависимые не&nbsp;чисты перед законом. Каждый прошедший лечение наркомании или алкоголизма у&nbsp;нас получает необходимые документы и&nbsp;начинает новую жизнь. Мы&nbsp;поможем восстановить утерянные документы, окажем защиту в&nbsp;суде. Условно осужденные имеют возможность отмечаться по&nbsp;месту прохождения реабилитации.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h3 class="mb-0">
+                    <a href="#collapseThree" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>профессионализм сотрудников</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Во&nbsp;всех реабилитационных центрах &laquo;Здоровая жизнь&raquo; работают опытные медицинские психологи. Наши консультанты и&nbsp;врачи знают свое дело. Они окажут помощь в&nbsp;решении сложных вопросов, окажут профессиональную психологическую помощь. Лечение алкоголизма и&nbsp;наркомании проводится в&nbsp;центре имеющем все необходимые документы. Звоните на&nbsp;горячую линию&nbsp;+7 (843) 226 47 57&nbsp;и&nbsp;узнайте о&nbsp;ближайшем к&nbsp;вам реабилитационном центре.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h3 class="mb-0">
+                    <a href="#collapseFour" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>сертификаты</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Наши центры реабилитации наркозависимых, зависимых от&nbsp;алкоголя и&nbsp;азартных игр имеют сертификаты (ГОСТ 54990-2012). &laquo;Социальное обслуживание населения. Реабилитационные услуги лицам, зависимым от&nbsp;наркотических средств, психоактивных веществ и&nbsp;алкоголя. Основные виды социальных услуг&raquo;, а&nbsp;также Сертификат соответствия первого уровня от&nbsp;&laquo;Института демографии, миграции и&nbsp;регионального развития&raquo;.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h3 class="mb-0">
+                    <a href="#collapseFive" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>дальнейшая поддержка</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Прошедшие лечение у&nbsp;нас могут расчитывать на&nbsp;помощь в&nbsp;трудоустройстве. В&nbsp;трудную минуту мы&nbsp;окажем всевозможную психологическую помощь. Мы&nbsp;поможем вам не&nbsp;только вылечиться от&nbsp;алкоголизма и&nbsp;наркомании, но&nbsp;и&nbsp;стать полноценным членом общества.
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.col-12 col-md-6-->
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h3 class="mb-0">
+                    <a href="#collapseSix" class="accord-navitem" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>эффективность</span>
+                    </a>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    По&nbsp;многолетней статистике&nbsp;96% прошедших у&nbsp;нас реабилитацию наркоманы и&nbsp;алкоголики полностью избавляются от&nbsp;зависимости и&nbsp;возвращаются к&nbsp;нормальной полноценной жизни.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h3 class="mb-0">
+                    <a href="#collapseSeven" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>анонимность</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Прохождение лечения наркомании и&nbsp;алкоголизма в&nbsp;наших центрах полностью анонимно. Во&nbsp;всех центрах ведется круглосуточное видео наблюдение, дежурит охрана.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h3 class="mb-0">
+                    <a href="#collapseEight" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>инновации</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Нашей целью является внедрение медицинских, психологических и&nbsp;социальных инноваций в&nbsp;существующие методы решения проблем наркотической и&nbsp;иных зависимостей, а&nbsp;также разработка инновационных технологий профилактики наркомании среди молодежи.
+В&nbsp;связи с&nbsp;этим основные направления деятельности нашего центра таковы:
+                    <ol>
+                      <li>Мы&nbsp;следим за&nbsp;научными технологиями и&nbsp;открытиями в&nbsp;области наркологии;</li>
+                      <li>Собственная разработка наиболее эффективных методик реабилитации;</li>
+                      <li>Поиск эффективных способов работы с&nbsp;созависимыми;</li>
+                      <li>Постоянное сотрудничество и&nbsp;обмен опытом с&nbsp;другими реабилитационными центрами, в&nbsp;которых проводится лечение алкоголизма и&nbsp;наркомании с&nbsp;хорошими результатами.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingNine">
+                  <h3 class="mb-0">
+                    <a href="#collapseNine" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>помощь родным и близким зависимых</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    В&nbsp;вашу семью прокралась беда под названием &laquo;наркотик&raquo;&nbsp;&mdash; близкий человек увяз, как в&nbsp;трясине, в&nbsp;пагубной зависимости. И&nbsp;если сначала казалось, что сможете вытащить его самостоятельно, со&nbsp;временем вы&nbsp;поняли, как порабощает, ломает психику и&nbsp;изменяет сознание этот страшный недуг. В&nbsp;одиночку не&nbsp;справитесь! Чтобы победить зависимость, жизненно необходима помощь специалистов&nbsp;&mdash; профессионалов из&nbsp;центра реабилитации &laquo;Здоровая жизнь&raquo;. В&nbsp;стационаре и&nbsp;в&nbsp;специализированном реабилитационном центре вашему близкому зависимому человеку, также как и&nbsp;вам, будут оказаны вся необходимая помощь и&nbsp;поддержка. Вместе с&nbsp;психологами, консультантами по&nbsp;химической зависимости и&nbsp;с&nbsp;другими людьми, прошедшими тот&nbsp;же путь, вы&nbsp;преодолеете болезнь наверняка!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTen">
+                  <h3 class="mb-0">
+                    <a href="#collapseTen" class="accord-navitem" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="material-icons">keyboard_arrow_down</i>
+                      <span>прозрачность</span>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#advantages-accord">
+                  <div class="card-body">
+                    Мы&nbsp;сотрудничаем со&nbsp;всеми профильными государственными и&nbsp;частными органами. Мы&nbsp;открыты для всех.
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.col-12 col-md-6-->
+          </div><!-- /.row-->
+        </div>
+      </div>
+    </section><!-- /#why-us-->
+    <section id="addict-types">
+      <div class="container-fluid">
+        <h2 class="text-center">Виды зависимости</h2>
+        <div class="row justify-content-center">
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <a href="#modal-narkomania" class="circle-icon"  data-toggle="modal">
+              <span></span>
+              <img src="img/addict-icn1.png" alt="">
+            </a>
+            <a href="#modal-narkomania" class="circle-icon-text"  data-toggle="modal">1. Наркомания</a>
+          </div>
+
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <a href="#modal-alcohol" class="circle-icon"  data-toggle="modal">
+              <span></span>
+              <img src="img/addict-icn2.png" alt="">
+            </a>
+            <a href="#modal-alcohol" class="circle-icon-text"   data-toggle="modal">2. Алкоголизм</a>
+          </div>
+
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <a href="#modal-soli" class="circle-icon"  data-toggle="modal">
+              <span></span>
+              <img src="img/addict-icn3.png" alt="">
+            </a>
+            <a href="#modal-soli" class="circle-icon-text"  data-toggle="modal">3. Соли</a>
+          </div>
+
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <a href="#modal-spice" class="circle-icon"  data-toggle="modal">
+              <span></span>
+              <img src="img/addict-icn4.png" alt="">
+            </a>
+            <a href="#modal-spice" class="circle-icon-text"  data-toggle="modal">4. Спайсы</a>
+          </div>
+
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <a href="#modal-igromania" class="circle-icon"  data-toggle="modal">
+              <span></span>
+              <img src="img/addict-icn5.png" alt="">
+            </a>
+            <a href="#modal-igromania" class="circle-icon-text"  data-toggle="modal">5. Игровая</a>
+          </div>
+        </div>
+        <!-- Modals about addict-types -->
+        <div class="modal fade" id="modal-narkomania" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Влияние наркотиков</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="red">Влияние наркотиков на жизнь человека и на общество</h4>
+                <p><b>Влияние наркотиков на человека</b> начинается с самого
+                первого момента, когда он принимает наркотик. Здесь играет роль
+              физическая и эмоциональная, психологическая сторона проблемы употребления
+            наркотиков. Наркотики поглощают внимание человека, фиксируют его на прошлом,
+          а само прошлое человека превращают в беспорядочные воспоминания.</p>
+                <p><b>Человек становится</b> слишком погружен в себя, переставая замечать
+                то, что происходит вокруг. Она начинает допускать ошибки, становится прчиной
+              несчастных случаев и больших расстройств. Это происходит настолько постепенно,
+            настолько незаметно, что он начинает понимать это, когда уже слишком поздно.</p>
+            <p class="red">Влияние наркотиков на человека не ограничивается лишь болезнями
+            и тягой к наркотикам.</p>
+            <p><b>Взаимоотношения человека</b> с семьей, друзьями, не принимающими наркотики,
+            с окружающими его людьми ухудшаются. Человек перестает достигать успехов в школе,
+          институте или на работе. Его интересы постепенно ограничиваются наркотиками и тем,
+        что с ними связано. Влияние наркотиков на жизнь человека таково, что она идет под откос,
+      рушится. Большое количество неудач, страданий, разрушенные мечты и стремления, отсутствие
+    друзей, которым человек по-настоящему интересен и которые его по-настоящему любят - вот та жизнь,
+  или, скорее, существование, которое влачит наркоман. Влияние наркотика на жизнь человека таково, что
+оно по крупице отбирает саму жизнь и то, что ее составляет. Все, что остается человеку - это надежда,
+что очередная доза хоть немного поможет от душевной и физической боли и сделает существование хоть немного
+не таким ужасным. Влияние наркотиков на человека неотделимо от влияния их на общество.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./modal-narkomania -->
+        <div class="modal fade" id="modal-alcohol" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Алкогольная зависимость</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="red">Принимая спиртные напитки...</h4>
+                <p><b>Человек подвергает себя риску</b> алкогольной зависимости.
+                Это состояние имеет под собой основу, прочную как камень - стремление к удовольствию,
+              к хорошему, к приятным мыслям и эмоциям, к комфортным состояниям, достижению успеха.</p>
+                <h4 class="red">Причины алкогольной зависимости</h4>
+                <p>Алкогольная зависимость чаще всего случается по одной простой причине - спиртной
+                напиток становится средством решить проблему (или проблемы). Например, молодой
+              человек пьет пиво вечерами, чтобы &laquo;снять напряжение&raquo; после работы. Или девушка
+            пьет на вечеринке, чтобы забыть о парне, с которым рассталась, и весело провести время.
+          Сколько проблем, столько может быть и поводов. </p>
+                <h4  class="red">Какой эффект при этом дает алкоголь?</h4>
+                <p><b>Алкоголь - это яд, который имеет 3 стадии действия в зависимости от дозы:</b></p>
+                <ul>
+                  <li><b>маленькая доза</b> стимулирует (обмен веществ, кровообращение увеличивается, чтобы
+                    вывести яд, ощущается прилив энергии и повышение настроения);</li>
+                  <li><b>стредняя доза</b> расслабляет (замедляется кровообращение и обмен веществ,
+                    чувствуется слабость, человек успокаивается, затормаживается и даже засыпает);</li>
+                  <li><b>большая доза</b> убивает (организм не может справиться с ядом).</li>
+                </ul>
+                <p><b>Далее,</b> существует физическое привыкание, так как тело адаптируется и для достижения
+                такого же эффекта нужно постоянно повышать дозу.</p>
+                <p>Алкогольная зависимость больше всего проявляется <b>на уровне</b> состояния человека - его <b>разума и эмоций.</b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./modal-alcohol -->
+        <div class="modal fade" id="modal-soli" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Соли</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="red">Как один прием делает человека наркоманом</h4>
+                <p><b>Вся опасность соли в том,</b> что приняв ее, человек переживает
+                непередаваемые эмоции и прилив энергии, только вот ему кажется, что нужно принять
+              еще чуть-чуть, чтобы его ощущения стали полными, чтобы &laquo;догнаться&raquo;. И так
+            начинается порочный круг и постоянное дикое желание принять его еще. А когда действие солей
+          заканчивается, начинается глубокая депрессия.</p>
+                <h4 class="red">Соли убивают чуть медленнее пули</h4>
+                <p><b>1) Тело.</b> У наркомана пропадает сон, аппетит, но появляется много энергии -
+                через несколько месяцев такой жизни он становится похож на обтянутый кожей скелет, и это не
+              преувеличение. Танцы и дискотеки сжигают много энергии, после них одолевает дикий аппетит,
+            но только не того, кто &laquo;под солью&raquo;. Сколько тело может прожить без аппетита и не
+          получая достаточного количества пищи и отдыха?</p>
+                <p><b>2) Здоровье.</b> Не получая полезных веществ (которые участвуют во многих процессах,
+                  происходящих в теле и обеспечивают все его функции), тело лишается иммунитета и не может
+                противостоять любой,даже самой слабой бацилле. Остатки витаминов, минералов исчезают.</p>
+                <p><b>3) Мышление и интеллект.</b> Интеллект - это способность решать стоящие перед человеком
+                жизненные задачи. Мышление - это способность использовать для решения задач свой разум, память,
+              опыт, воображение. Соли могут лишить человека мышления и интеллекта уже через несколько месяцев.</p>
+                <p><b>4) Память и внимание.</b> Солевой наркоман не может сосредоточиться
+                даже на самой простой и интересной теме разговора, он не помнит вчерашний день и не может
+              спать. Это продолжается даже если наркоман бросил употреблять соли.</p>
+                <p><b>5) Эмоции и поведение.</b> Чаще всего человек разражен или растерян, не способен
+                адекватно оценить обстановку. Это проявляется даже в том, что он может &laquo;выйти&raquo;
+              через окно или в панической паранойе, происках тайного заговора и мерещащихся шпионов.
+            Иногда человек &laquo;впадает в детство&raquo; - капризничает и плачет.</p>
+                <p><b>6) Наркоман,</b> принимающий этот наркотик, не осознает зависимости и считает,
+                что может бросить их в любой момент.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./modal-soli -->
+        <div class="modal fade" id="modal-spice" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Спайсы</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="red">Вред спайса</h4>
+                <p><b>Абсолютно</b> на всех упаковках курительных смесей, именуемых как спайс,
+                просто обязаны писать - осторожно, <b>опасно для жизни!</b> Ведь это действительно
+              так. Несмотря на мнение общественности об отсутствии вреда употребления, а также о чистом
+            составе и отсутствии тяжелых последствий, на самом деле эти смеси очень опасны для человеческого
+          организма.</p>
+                <h4 class="red">Что же представляет собой спайс?</h4>
+                <p>В первую очередь это смесь трав, в состав которых входит немалая доля
+                синтетических веществ. Выражаясь по-простому, это химическая смесь,
+              содержащая в себе психоактивные компоненты. В то же время каждому из нас
+            известно, что химия в любых ее проявлениях очень вредна для человеческого организма. </p>
+                <p>Главным элементом смеси является синтетическое вещество известное как JWH-018. Оно
+                в разы мощнее натурального ТГК аналога, который содержится в марихуане. К тому же,
+              указанный ТГК признан абсолютно безвредным для организма, но это не значит, что гашиш
+            или марихуана неопасна. </p>
+                <h4 class="red">Какие последствия после употребления спайса</h4>
+                <p>Если не говорить много, а перейти непосредстенно к делу, то на вопрос -
+                какие последствия после употребления спайса, ответ будет предельно прост - это слабоумие.
+              Действительно, при длительном курении клетки человеческого мозга разрушаются, при этом
+            возможности их восстановления нет.</p>
+                <p>Объясняется это очень просто: во время курения капилляры, расположенные в мозгу, сужаются.
+                Это своего рода защитная реакция мозга, который изо всех сил старается не пустить ядовитые вещества.
+              Впоследствии сдавливания сосудов мозг не получает кислорода в достаточном количестве, ввиду чего
+            и происходит отмирание клеток.</p>
+                <p>Многие могут возмутиться, пара или тройка раз не приведет к слабоумию, но здесь вы должны четко
+                осознавать проблему, копнув максимально глубоко. Ввиду того, что это товар, представленный на рынке,
+              производитель получает за него определенную выгоду, которая увеличилась в последние годы
+            в несколько раз из-за широкой популярности смесей. Соответственно, торговой марке выгодно втянуть потребителя.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./modal-spice -->
+        <div class="modal fade" id="modal-igromania" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Игромания</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4 class="red">Лудомания - игромания, игровая зависимость</h4>
+                <p>По нашему мнению пролему игромании нельзя рассматривать в отрыве от таких проблем
+                как алкоголизм и наркомания. Принимая во внимание то, что механизмы формирования психологической
+              зависимости при этих расстройствах общие, а также то, что нередко эти заболевания протекают
+            сопряженно или в виде перекрестной зависимости, можно сделать выводы о том, что алкоголизм, наркомания
+          и игромания являются разными формами одного и того же заболевания. разница лишь в степени наркогенности,
+        или в том, с какой скоростью человек необратимо разрушается как личность. Кроме того, можно
+      усмотреть этапность в формировании зависимости. Так выяснилось, что почти все игроманы курят табак, а
+    большая их часть еще и злоупотребляет алкоголем.</p>
+                <p>Кроме того, следует иметь в виду, что игромания не является проблемой одного человека,
+                а представляет собой проблему всей семьи. В псиологической помощи нуждаются все члены первой, а
+              то и второй степени родства, даже если они проживают в другом городе, причем в не меньшем объеме, чем сам зависимый.</p>
+                <p>На уровне болезни &laquo;фунтаментом&raquo; является &laquo;созависимость&raquo; в болезненно
+                выраженной форме, дисгармония семейных отношений. Из-за низкой самооценки в системе
+              ценностей созависимых доминирует абсолютизация волевого контроля за поведением игромана, забота
+            любой ценой, невзирая на результат, и никому не нужная жертвенность. Созависимость на семейном
+          уровне представляет собой семейную систему потворства пороку. А вылечить от созависимости, а
+        значит и от игромании (алкоголизма) на микросоциальном уровне, означает разрушить семейную систему
+      потворства и обучть членов семьи тому, как действовать эффективно в отношении болезни близкого человека.
+    Поскольку состояние созависимых, их ложные взгляды и представления обладают относительной устойчивостью
+  к разубеждениям, то требуется специальное вмешательство для того, чтобы изменить их мышление, а, следовательно, и поведение.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- ./modal-igromania -->
+      </div><!-- /.container-fluid-->
+    </section><!-- /#addict-types-->
+    <section id="steps">
+      <div class="container-fluid text-white">
+        <h2 class="text-center">этапы реабилитации</h2>
+        <div class="row justify-content-center">
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <div class="circle-icon">
+              <span></span>
+              <img src="img/steps-icn1.png" alt="">
+            </div>
+            <p class="circle-icon-text t-white">1. Звонок и консультация</p>
+          </div>
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <div class="circle-icon">
+              <span></span>
+              <img src="img/steps-icn2.png" alt="">
+            </div>
+            <p class="circle-icon-text t-white">2. Трансфер</p>
+          </div>
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <div class="circle-icon">
+              <span></span>
+              <img src="img/steps-icn3.png" alt="">
+            </div>
+            <p class="circle-icon-text t-white">3. Реабилитация по оптимальной программе</p>
+          </div>
+          <div class="col-auto circle-icon-block d-flex flex-column align-items-center">
+            <div class="circle-icon">
+              <span></span>
+              <img src="img/steps-icn4.png" alt="">
+            </div>
+            <p class="circle-icon-text t-white">4. Социальная адаптация</p>
+          </div>
+        </div><!-- /.row -->
+      </div>
+    </section><!-- /#steps -->
+    <section id="staff">
+      <div class="container-fluid text-center">
+        <h2>наши специалисты</h2>
+        <div class="row">
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-ishmaev.png" alt="">
+            <p class="staff-post">Генеральный директор. Психолог</p>
+            <p class="staff-name">Ишмаев Данил Раильевич</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#" data-toggle="modal" data-target="#modalIshmaev">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-novikova.png" alt="">
+            <p class="staff-post">Врач. Клинический психолог</p>
+            <p class="staff-name">Новикова Алена Аркадьевна</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#" data-toggle="modal" data-target="#modalNovikova">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-idrisov.png" alt="">
+            <p class="staff-post">Директор программы. Психолог. Реабилитолог</p>
+            <p class="staff-name">Идрисов Альберт Ваязович</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#"  data-toggle="modal" data-target="#modalIdrisov">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-borodovicina.png" alt="">
+            <p class="staff-post">Специалист. Консультант по химической зависимости</p>
+            <p class="staff-name">Бородовицина Анжелина Юрьевна</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#"  data-toggle="modal" data-target="#modalBorodovicina">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-smirnov.png" alt="">
+            <p class="staff-post">Специалист. Консультант по химической зависимости</p>
+            <p class="staff-name">Смирнов Алексей Игоревич</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#" data-toggle="modal" data-target="#modalSmirnov">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-zlobin.png" alt="">
+            <p class="staff-post">Специалист. Консультант по химической зависимости</p>
+            <p class="staff-name">Злобин Иван Владимирович</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#"  data-toggle="modal" data-target="#modalZlobin">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-duldev.png" alt="">
+            <p class="staff-post">Консультант по химической зависимости</p>
+            <p class="staff-name">Дюльдев Дмитрий Игоревич</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#"  data-toggle="modal" data-target="#modalDuldev">Подробнее</a>
+          </div>
+
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/staff-gorshenin.png" alt="">
+            <p class="staff-post">Консультант по химической зависимости</p>
+            <p class="staff-name">Горшенин Дмитрий Константинович</p>
+            <div class="dd-line"></div>
+            <a class="btn btn-info" href="#" data-toggle="modal" data-target="#modalGorshenin">Подробнее</a>
+          </div>
+        </div>
+        <!-- Modals for additional info about staff-->
+        <div class="modal fade" id="modalIshmaev" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Ишмаев Данил Раильевич</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Генеральный директор. Психолог.</b>
+                <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b>Обучается</b> в&nbsp;Университете на&nbsp;кафедре психологии;</li>
+                  <li><i class="fas fa-check"></i><b>В&nbsp;сфере реабилитации</b> работает 9&nbsp;лет;</li>
+                  <li><i class="fas fa-check"></i>Имеет <b>опыт работы</b> в&nbsp;зарубежных центрах, в&nbsp;VIP центре по&nbsp;индивидуальным программам;</li>
+                  <li><i class="fas fa-check"></i><b>Проходил обучение</b> на&nbsp;семинарах и&nbsp;тренингах, посвящённым процессам реабилитации, концепциям болезни, профессионального и&nbsp;личностного роста.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalIshmaev -->
+        <div class="modal fade" id="modalNovikova" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Новикова Алёна Аркадьевна</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Врач. Клинический психолог.</b>
+                <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b>Образование:</b> закончила Казанский Государственный Медицинский Университет;</li>
+                  <li><i class="fas fa-check"></i><b>Специализация:</b> Врач. Психолог, прохожу сертификационную специализацию на&nbsp;клинического психолога;</li>
+                  <li><i class="fas fa-check"></i><b>Последние 8&nbsp;лет</b> работаю в&nbsp;реабилитации, руководителем программы, веду индивидуальное психологическое сопровождение;</li>
+                  <li><i class="fas fa-check"></i><b>Обучаюсь NLP практикам</b> (нейро лингвистическое программирование) Гештальт терапия, телесно ориентированная терапия.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalNovikova -->
+        <div class="modal fade" id="modalIdrisov" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Идрисов Альберт Ваязович</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Директор программы. Психолог. Реабилитолог.</b>
+                <!-- <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i> <b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                </ul> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalIdrisov -->
+        <div class="modal fade" id="modalBorodovicina" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Бородовицина Анжелина Юрьевна</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Специалист. Консультант по химической зависимости.</b>
+                <!-- <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i> <b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                </ul> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalBorodovicina -->
+
+        <div class="modal fade" id="modalSmirnov" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Смирнов Алексей Игоревич</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Специалист. Консультант по химической зависимости.</b>
+                <!-- <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i> <b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                </ul> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalSmirnov -->
+
+        <div class="modal fade" id="modalZlobin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Злобин Иван Владимирович</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Специалист. Консультант по химической зависимости.</b>
+                <!-- <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                  <li><i class="fas fa-check"></i> <b></b> </li>
+                  <li><i class="fas fa-check"></i><b></b> </li>
+                </ul> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalZlobin -->
+
+        <div class="modal fade" id="modalDuldev" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Дюльдев Дмитрий Игоревич</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Специалист. Консультант по химической зависимости.</b>
+                <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i><b>Образование:</b> неоконченное высшее;</li>
+                  <li><i class="fas fa-check"></i><b>В программе</b> с 1998 года;</li>
+                  <li><i class="fas fa-check"></i>С&nbsp;2007&nbsp;г. консультант Кабинета адаптационной программы и&nbsp;профилактики срыва;</li>
+                  <li><i class="fas fa-check"></i><b>Участвовал</b> в&nbsp;конкурсе среди консультантов Реабилитационных центров Казани. Участвовал в&nbsp;семинарах по&nbsp;проблемам &laquo;Насилие в&nbsp;семье&raquo;, &laquo;Созависимости&raquo;, &laquo;Взрослые дети алкоголиков&raquo;. Продолжаю обучение, участвую и&nbsp;провожу семинары личностного роста и&nbsp;профессиональной подготовки специалистов по&nbsp;химической зависимости. Одна из&nbsp;моих ценностей&nbsp;&mdash; это опыт трезвой жизни, которым я&nbsp;с&nbsp;радостью делюсь.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalDuldev -->
+
+        <div class="modal fade" id="modalGorshenin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Горшенин Дмитрий Константинович</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>Специалист. Консультант по химической зависимости.</b>
+                <ul class="staff-skills">
+                  <li><i class="fas fa-check"></i>Продолжаю своё развитие, участвую в&nbsp;обучающих тренингах: особенности работы с&nbsp;пациентами с&nbsp;двойным диагнозом, этические принципы консультанта;</li>
+                  <li><i class="fas fa-check"></i>Целеустремлённый, добросовестный, уравновешенный.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /#modalGorshenin -->
+
+      </div><!-- /.container-fluid -->
+    </section><!-- /#staff -->
+    <section id="certificates">
+      <div class="container-fluid text-center">
+        <h2>наши сeртификаты</h2>
+        <div id="lightgallery1">
+          <div class="certif">
+            <a href="img/certif1.jpg" class="slide">
+              <img src="img/certif1.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif2.jpg"  class="slide">
+              <img src="img/certif2.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif3.jpg"  class="slide">
+              <img src="img/certif3.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif4.jpg" class="slide">
+              <img src="img/certif4.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif5.jpg"  class="slide">
+              <img src="img/certif5.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif6.jpg"  class="slide">
+              <img src="img/certif6.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+          <div class="certif">
+            <a href="img/certif7.jpg" class="slide">
+              <img src="img/certif7.jpg" alt="">
+              <span class="overlay-certif"></span>
+              <i class="material-icons overlay-icon">zoom_out_map</i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /#certificates -->
+    <section id="results">
+      <div class="container-fluid text-center">
+        <h2>наши результаты</h2>
+        <!-- <div class="row  justify-content-center">
+          <div class="col-auto">
+            <iframe width="270" height="230" src="https://www.youtube.com/embed/dSvgJhbeK7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-auto">
+            <iframe width="270" height="230" src="https://www.youtube.com/embed/4OazahZJvlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          </div>
+          <div class="row justify-content-center">
+
+          <div class="col-auto">
+            <iframe width="270" height="230" src="https://www.youtube.com/embed/cd9_2UPsbB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-auto">
+            <iframe width="270" height="230" src="https://www.youtube.com/embed/OJb413QatoM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> -->
+        <a class="btn btn-info" href="reviews.html">посмотреть все видео</a>
+      </div>
+    </section><!-- /#results -->
+    <section id="price" class="text-white text-center">
+      <div class="overlay-price">
+        <div class="container-fluid">
+          <h2>внимание, друзья!</h2>
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <span>При обращении с&nbsp;сайта скидка&nbsp;10%</span>
+              <div class="price-block">
+                <p>цена:</p>
+                <p class="day-price">от&nbsp;1500 рублей в&nbsp;сутки</p>
+              </div>
+              <a href="#modalConsult" class="callout" data-toggle="modal">нужна помощь</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /#price -->
+    <footer>
+      <div class="container-fluid text-white">
+        <a href="#" class="totop"><i class="fas fa-angle-up"></i></a>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4>наши контакты</h4>
+
+              <div class="ver-centered"><i class="material-icons">access_time</i><span>Работаем круглосуточно 24/7</span></div>
+              <div class="ver-centered"><i class="material-icons">home</i><span>г.Казань, ул. Петра Алексеева, 7А, офис 5</span></div>
+              <div class="ver-centered"><i class="material-icons">phone</i><a href="#" class="whitelink">+7 (843) 226 47 57 (позвонить)</a></div>
+              <div class="ver-centered"><i class="material-icons">email</i><a href="#" class="whitelink">info@fundzj.ru (написать)</a></div>
+              <div class="social-links">
+                <a href="http://vk.com/public118919101" class="whitelink" target="_blank"><i class="fab fa-vk fa-lg"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100011746761286" class="whitelink" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://www.youtube.com/channel/UCNl_CIYIgA0Iahlq-sEJnLA" class="whitelink" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+              </div>
+          </div>
+          <div class="d-none d-md-block col-md-3 col-lg-2">
+            <h4>навигация</h4>
+            <ul>
+              <li><a href="#" class="whitelink">Главная</a></li>
+              <li><a href="about.html" class="whitelink">О программе</a></li>
+              <li><a href="news.html" class="whitelink">Новости</a></li>
+              <li><a href="photos.html" class="whitelink">Фото и видео</a></li>
+              <li><a href="reviews.html" class="whitelink">Отзывы</a></li>
+              <li><a href="contacts.html" class="whitelink">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 col-lg-2">
+            <h4>мы в регионах</h4>
+            <ul class="d-flex flex-wrap d-md-block regions">
+              <li><a href="http://moscowrc.ru" class="whitelink" target="_blank">Москва</a></li>
+              <li><a href="http://fundzj.ru/zj_ufa.html" class="whitelink"  target="_blank">Уфа</a></li>
+              <li><a href="http://fundzj.ru/zj_perm.html" class="whitelink" target="_blank">Пермь</a></li>
+              <li><a href="http://fundzj.ru/zj_novgorod.html" class="whitelink" target="_blank">Нижний новгород</a></li>
+              <li><a href="http://fundzj.ru/zj_samara.html" class="whitelink" target="_blank">Самара</a></li>
+              <li><a href="http://fundzj.ru/zj_penza.html" class="whitelink" target="_blank">Пенза</a></li>
+              <li><a href="http://orenburgrc.ru" class="whitelink" target="_blank">Оренбург</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <h4>лицензия</h4>
+            <p>Медицинские услуги оказываются ГБУЗ СОНД МЗ&nbsp;Самарской области
+Самарский наркологический диспансер Южное шоссе&nbsp;18</p>
+          </div>
+      </div>
+      <p class="copyright">&copy; 2019 <a href="" class="whitelink">Лечение наркомании и алкоголизма в Казани - Реабилитационный центр «Здоровая Жизнь»
+</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="dist/switchery.js"></script>
+    <script src="dist/jquery.inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
