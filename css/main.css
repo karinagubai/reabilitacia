@@ -432,7 +432,8 @@ footer .material-icons,
   font-weight: bold;
 }
 
-.gallery-item {
+.gallery-item,
+.video {
   position: relative;
   display: inline-block;
   margin-right: 20px;
@@ -500,7 +501,7 @@ img[src*="media"] {
   margin-bottom: 5px;
 }
 
-#results .col-auto {
+.videoblock {
   margin-bottom: 20px;
 }
 
@@ -752,8 +753,12 @@ footer .col-12:last-child {
   .card-body {
     padding-left: 40px;
   }
-  #mediagallery .gallery-item {
+  #mediagallery .gallery-item,
+  .video {
     width: 45%;
+  }
+  #mediagallery .videos {
+    width: 100%;
   }
 }
 

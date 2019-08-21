@@ -28,27 +28,15 @@ $(document).ready(function(){
 });
 
 
-// Filter aspects
+// Filtering
 
-// init Isotope
 $('.rew-patients').hide();
-var $grid = $('.grid').isotope({
-  // options
-});
-// filter items on button click
-$('.filter-nav').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
+$('.btn-filter').on('click', function(){
+  const filterValue = $(this).attr('data-filter');
   if ( filterValue == '.rew-patients' ) {
     $('.rew-patients').show();
   }
-  $grid.isotope({ filter: filterValue });
-});
-
-// Filter mediaGallery
-
-$('.btn-gallery').on('click', function(){
-  const filterValue = $(this).attr('data-filter');
-  $('.gallery-item').each(function(index, item){
+  $('.filter-item').each(function(index, item){
     if($(item).hasClass(filterValue)){
       $(item).show();
     } else {

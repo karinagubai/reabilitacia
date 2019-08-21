@@ -120,82 +120,80 @@
         </div><!--/.row-->
         <h3 class="text-center">Программа работает с несколькими аспектами личности:</h3>
         <div class="filter-nav d-flex flex-wrap justify-content-center">
-          <button class="btn-filter btn-active" data-filter="*">Все аспекты</button>
-          <button class="btn-filter" data-filter=".fizio">Физиологический</button>
-          <button class="btn-filter" data-filter=".emo">Эмоциональный</button>
-          <button class="btn-filter" data-filter=".socium">Социальный</button>
-          <button class="btn-filter" data-filter=".duhov">Духовный</button>
-          <button class="btn-filter" data-filter=".motiv">Мотивация</button>
+          <button class="btn-filter btn-active" data-filter="all">Все аспекты</button>
+          <button class="btn-filter" data-filter="fizio">Физиологический</button>
+          <button class="btn-filter" data-filter="emo">Эмоциональный</button>
+          <button class="btn-filter" data-filter="socium">Социальный</button>
+          <button class="btn-filter" data-filter="duhov">Духовный</button>
+          <button class="btn-filter" data-filter="motiv">Мотивация</button>
         </div><!--/.filter-nav-->
-        <div class="grid">
-          <div class="row aspect fizio">
-            <div class="col-12 col-md-6 text-center">
-              <img src="img/aspect-fizio.png" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-              <h4>Физиологический аспект</h4>
-              <p>Во&nbsp;время употребления для человека его тело воспринимается только как проводник удовольствия.
-                Исключая небрежное и&nbsp;формируя новое отношение к&nbsp;организму мы&nbsp;возвращаем былой тонус
-                и&nbsp;здоровье. Программа реабилитации уделяет большое внимание профилактике и&nbsp;лечению
-                различных заболеваний и&nbsp;занятиям спортом.</p>
-              <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div><!--/.row aspect-->
-          <div class="row aspect emo">
-            <div class="col-12 col-md-6 text-center">
-              <img src="img/aspect-emo.png" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-              <h4>Эмоциональный аспект</h4>
-              <p>После отказа от&nbsp;наркотиков или алкоголя человек сильно подвержен стрессу.
-                Душевная боль сопровождается апатией и&nbsp;тревогой. Программа реабилитации
-                способна сформировать уверенность в&nbsp;себе, вернуть чувство безопасности
-                и&nbsp;былые радости.</p>
-              <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div><!--/.row aspect-->
-          <div class="row aspect socium">
-            <div class="col-12 col-md-6 text-center">
-              <img src="img/aspect-socium.jpg" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-              <h4>Социальный аспект</h4>
-              <p>Снова сделать человека полноценным членом общества&nbsp;&mdash; еще
-                один важный аспект программы. Мы&nbsp;учим спокойно преодолевать
-                конфликты, достигать цели; возвращаем коммуникативные навыки
-                и&nbsp;ощущение собственной значимости в&nbsp;обществе.</p>
-              <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div><!--/.row aspect-->
-          <div class="row aspect duhov">
-            <div class="col-12 col-md-6 text-center">
-              <img src="img/aspect-duhov.png" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-              <h4>Духовный аспект</h4>
-              <p>Во&nbsp;время употребления в&nbsp;человеке укореняются такие чувства
-                как эгоизм, гнев, жалость к&nbsp;себе и&nbsp;др. Мы&nbsp;помогаем
-                больному вернуть нравственность и&nbsp;здоровое мировосприятие.</p>
-              <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div><!--/.row aspect-->
-          <div class="row aspect motiv">
-            <div class="col-12 col-md-6 text-center">
-              <img src="img/aspect-motiv.png" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-              <h4>Мотивация</h4>
-              <p>Для полного настоящего оздоровления необходимо осознавать, что
-                зависимость наносит тяжелейший вред не&nbsp;только здоровью,
-                но&nbsp;и&nbsp;семье, социальному положению. <b>Квалифицированные
-                психологи реабилитационного центра &laquo;Здоровая жизнь&raquo;
-                глубоко работают над мотивационной частью зависимого.</b>
-                Человеку открывают глаза на&nbsp;роль наркотиков и&nbsp;алкоголя
-                в&nbsp;его жизни.</p>
-              <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
-            </div>
-          </div><!--/.row aspect-->
-        </div><!--/.grid-->
+        <div class="row aspect all fizio filter-item">
+          <div class="col-12 col-md-6 text-center">
+            <img src="img/aspect-fizio.png" alt="">
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Физиологический аспект</h4>
+            <p>Во&nbsp;время употребления для человека его тело воспринимается только как проводник удовольствия.
+              Исключая небрежное и&nbsp;формируя новое отношение к&nbsp;организму мы&nbsp;возвращаем былой тонус
+              и&nbsp;здоровье. Программа реабилитации уделяет большое внимание профилактике и&nbsp;лечению
+              различных заболеваний и&nbsp;занятиям спортом.</p>
+            <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div><!--/.row aspect-->
+        <div class="row aspect all emo filter-item">
+          <div class="col-12 col-md-6 text-center">
+            <img src="img/aspect-emo.png" alt="">
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Эмоциональный аспект</h4>
+            <p>После отказа от&nbsp;наркотиков или алкоголя человек сильно подвержен стрессу.
+              Душевная боль сопровождается апатией и&nbsp;тревогой. Программа реабилитации
+              способна сформировать уверенность в&nbsp;себе, вернуть чувство безопасности
+              и&nbsp;былые радости.</p>
+            <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div><!--/.row aspect-->
+        <div class="row aspect all socium filter-item">
+          <div class="col-12 col-md-6 text-center">
+            <img src="img/aspect-socium.jpg" alt="">
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Социальный аспект</h4>
+            <p>Снова сделать человека полноценным членом общества&nbsp;&mdash; еще
+              один важный аспект программы. Мы&nbsp;учим спокойно преодолевать
+              конфликты, достигать цели; возвращаем коммуникативные навыки
+              и&nbsp;ощущение собственной значимости в&nbsp;обществе.</p>
+            <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div><!--/.row aspect-->
+        <div class="row aspect all duhov filter-item">
+          <div class="col-12 col-md-6 text-center">
+            <img src="img/aspect-duhov.png" alt="">
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Духовный аспект</h4>
+            <p>Во&nbsp;время употребления в&nbsp;человеке укореняются такие чувства
+              как эгоизм, гнев, жалость к&nbsp;себе и&nbsp;др. Мы&nbsp;помогаем
+              больному вернуть нравственность и&nbsp;здоровое мировосприятие.</p>
+            <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div><!--/.row aspect-->
+        <div class="row aspect all motiv filter-item">
+          <div class="col-12 col-md-6 text-center">
+            <img src="img/aspect-motiv.png" alt="">
+          </div>
+          <div class="col-12 col-md-6">
+            <h4>Мотивация</h4>
+            <p>Для полного настоящего оздоровления необходимо осознавать, что
+              зависимость наносит тяжелейший вред не&nbsp;только здоровью,
+              но&nbsp;и&nbsp;семье, социальному положению. <b>Квалифицированные
+              психологи реабилитационного центра &laquo;Здоровая жизнь&raquo;
+              глубоко работают над мотивационной частью зависимого.</b>
+              Человеку открывают глаза на&nbsp;роль наркотиков и&nbsp;алкоголя
+              в&nbsp;его жизни.</p>
+            <a href="#modalConsult" data-toggle="modal" class="infolink">Подробнее <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div><!--/.row aspect-->
       </div><!--/.container-fluid-->
     </section>
     <footer>
@@ -258,7 +256,6 @@
     <!-- lightgallery plugins -->
     <script src="js/lg-thumbnail.min.js"></script>
     <script src="js/lg-fullscreen.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/scripts.js"></script>
 
     </body>
